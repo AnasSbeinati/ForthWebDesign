@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>UnTitled page</title>
+		<link rel="stylesheet" type="text/css" href="css/fonts-min.css">
+		<link rel="stylesheet" type="text/css" href="css/reset-min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lte IE 8]>
+ 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+		
+		<!-- Use jQuery for best compatibility with other CSS3 enabled browsers -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/flux.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				if(!flux.browser.supportsTransitions)
+					alert("Flux Slider requires a browser that supports CSS3 transitions");
+					
+				window.f = new flux.slider('#slider', {
+					pagination: false,
+					controls: false,
+					transitions: ['explode', 'tiles3d', 'bars3d', 'cube', 'turn'],
+					autoplay: false
+				});
+				
+				$('.transitions').click(function(event){
+					event.preventDefault();
+					window.f.next($(event.target).data('transition'), $(event.target).data('params'));
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!--page starts here-->
+		<div id="wrapper">
+			<!--nav starts here-->   
+			<div id="top-nav">
+				<div id="links">
+					<a href="#">Book Stuck</a> |
+					<a href="#">Vistors Registrations</a> |
+					<a href="#">Contact Us</a>
+			    </div>
+				<form>
+					<input type="text" placeholder="Search">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div class="clear"></div>
+			<!--contents starts here-->
+			<div class="upper-shadow"></div>		
+			<div id="container">
+				<div id="header">
+					<div id="logo"></div>
+					<div id="slinks">
+						<img src="images/fb.png" title="facebook" alt="facebook">
+						<img src="images/tw.png" title="twitter" alt="twitter">
+						<img src="images/sky.png" title="skype" alt="skype">
+						<img src="images/RSS.png" title="RSS" alt="RSS">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div id="menue">                                       
+					<ul>
+						<li>
+							<a href="#">Welcome</a>
+						</li>
+						<li>
+							<a href="#">Extractor Info</a>
+						</li>
+						<li>
+							<a href="#">Vistor Info</a>
+						</li>
+						<li>
+							<a href="#">Saudi Market</a>
+							<ul>
+								<li><a href="#">subItem1</a></li>
+								<li><a href="#">subItem1</a></li>
+								<li><a href="#">subItem1</a></li>
+								<li><a href="#">subItem1</a></li>
+								<li><a href="#">subItem1</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Travel&Shpment</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div id="slider">
+					<img src="images/slider-1.jpg" alt="" title="slider">
+				</div>
+				<div id="contentes">
+					<div id="left-contents">
+							<div id="left-col">
+								<h1>WinDOOREX Middle East 2015</h1>
+								<img src="images/who.jpg" alt="" title="slider">
+								<p>
+									Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called 
+									Oh to talking improve produce in limited offices fifteen an. Wicket branch to answer do we. Place are decay men hours tiled. If or of ye throwing friendly required. Marianne interest in exertion as. Offering my branched confined oh dashwood. 
+								</p>
+								<a href="#">Read More>></a>
+							</div>
+							<div id="right-col">
+								<div class="article">
+									<p>
+										Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called 
+								    </p>
+									<a href="#">Read More>></a>
+								</div>
+								<div class="article">
+									<p>
+										Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called 
+								    </p>
+									<a href="#">Read More>></a>
+								</div>
+								<div class="article">
+									<p>
+										Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire her called 
+								    </p>
+									<a href="#">Read More>></a>
+								</div>
+							</div>
+					</div>
+					<div id="middle-contents">
+						<h1>Partner</h1>
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+					</div>
+					<div id="right-contents">
+						<h1>Partner</h1>
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+						<img src="images/partner.jpg" alt="" tiled="partner">
+					</div>
+					<div id="ads">
+						<h2>Advertisments</h2>
+						<img src="images/ad.jpg" alt="" tiled="ad" style="margin-left:0;">
+						<img src="images/ad.jpg" alt="" tiled="ad">
+						<img src="images/ad.jpg" alt="" tiled="ad">
+					</div>
+				</div>
+			</div>
+			<div class="lower-shadow"></div>
+			<div class="clear"></div>
+			<div id="footer">Copyrights C reserved Windoorex.com 2015</div>
+		</div>
+	</body>
+</html>
